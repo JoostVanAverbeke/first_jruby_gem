@@ -1,0 +1,19 @@
+{
+  "application": {
+    "name": "Silvio core gem",
+    "type": "ruby_gem",
+	"main_resource": "silvio_core.gemspec"
+  },
+  "build": {
+    "path": null,
+    "outputPath": null
+  },
+  "test": {
+    "enabled": true,
+    "path": null
+  },
+  "gen_doc": {
+    "registry": "docker.io",
+    "repository": "edwardsdl/sample-java"
+  }
+}
