@@ -2,7 +2,7 @@
   "application": {
     "name": "Silvio core gem",
     "type": "ruby_gem",
-	"main_resource": "silvio_core.gemspec"
+	"main_resource": "first_jruby_gem.gemspec"
   },
   "build": {
     "path": null,
