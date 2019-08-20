@@ -8,5 +8,6 @@ RUN apt-get update && \
 	apt-get install -y jq
 
 COPY stages stages
+RUN chmod -R 755 /stages
 
 WORKDIR /app
