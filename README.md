@@ -30,6 +30,21 @@ After checking out the repo, run `bin/setup` to install dependencies. Then, run 
 
 To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
+## How to build, test and deploy using generic pipelines with docker
+The repository contains a Dockerfile, pipeline.json file and a Jenkinsfile.
+It also contains a subdirectory ./stages which contains shell scripts to run the following steps in the build process:
+* 01_clone.sh (clones the source repository in the docker container)
+* 02_build.sh (run the build steps for that type of project in the docker container)
+* 03_test.sh (run the test steps for that type of project in the docker container
+* 04_gen_doc.sh (run the steps to generate the documentation in the docker container)
+
+To run all shell scripts at once, run the 00_run.sh in the docker container.
+E.g.
+```
+$ docker run -it -e GITHUB_URL="https://github.com/JoostVanAverbeke/first_jruby_gem" 
+-e BRANCH_NAME="whathever" docker4jruby /stages/00_run.sh
+```
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/first_jruby_gem. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
