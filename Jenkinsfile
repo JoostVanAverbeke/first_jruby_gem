@@ -3,19 +3,24 @@ pipeline {
         docker { image 'docker4jruby' }
     }
     stages {
+        stage('Clone') {
+            steps {
+                sh("/stages/01_clone.sh")
+            }
+        }
         stage('Build') {
             steps {
-                sh("/usr/src/gem/stages/02_build.sh")
+                sh("/stages/02_build.sh")
             }
         }
         stage("Test") {
             steps {
-                sh("/usr/src/gem/stages/03_test.sh")
+                sh("/stages/03_test.sh")
             }
         }
         stage("Documentation") {
             steps {
-                sh("/usr/src/gem/stages/04_gen_doc.sh")
+                sh("/stages/04_gen_doc.sh")
             }
         }
     }
