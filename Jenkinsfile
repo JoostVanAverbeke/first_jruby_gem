@@ -1,6 +1,8 @@
 pipeline {
     agent {
-        docker.image('docker4jruby').withRun('-e GITHUB_URL=https://github.com/JoostVanAverbeke/first_jruby_gem')
+        node("docker") {
+            docker.image('docker4jruby').withRun('-e GITHUB_URL=https://github.com/JoostVanAverbeke/first_jruby_gem')
+        }
     }
     stages {
         stage('Clone') {

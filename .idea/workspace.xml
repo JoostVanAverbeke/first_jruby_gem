@@ -57,8 +57,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Jenkinsfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="36" lean-forward="true" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+            <state relative-caret-position="68">
+              <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -118,8 +118,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-11" />
-    <option name="y" value="-4" />
+    <option name="x" value="1871" />
+    <option name="y" value="35" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -234,7 +234,7 @@
       <option name="presentableId" value="Default" />
       <updated>1566308878952</updated>
       <workItem from="1566308880379" duration="2420000" />
-      <workItem from="1566383806301" duration="621000" />
+      <workItem from="1566383806301" duration="1448000" />
     </task>
     <task id="LOCAL-00001" summary="Added some dummy say hello functionality">
       <created>1566310042026</created>
@@ -271,7 +271,21 @@
       <option name="project" value="LOCAL" />
       <updated>1566373992633</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fixed error in the docker image specification.&#10;Should be docker.image().withRun()">
+      <created>1566385284163</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1566385284164</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Fixed syntax error in Jenkinsfile">
+      <created>1566385377126</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1566385377126</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -292,10 +306,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3847000" />
+    <option name="totallyTimeSpent" value="4674000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
@@ -328,7 +342,9 @@
     <MESSAGE value="Added documentation regarding generic pipelines with docker" />
     <MESSAGE value="Corrected main_resource in pipeline.json" />
     <MESSAGE value="Added with .withRun('-e GITHUB_URL=...) to docker image" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added with .withRun('-e GITHUB_URL=...) to docker image" />
+    <MESSAGE value="Fixed error in the docker image specification.&#10;Should be docker.image().withRun()" />
+    <MESSAGE value="Fixed syntax error in Jenkinsfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed syntax error in Jenkinsfile" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/lib/first_jruby_gem/version.rb">
@@ -403,8 +419,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Jenkinsfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="36" lean-forward="true" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        <state relative-caret-position="68">
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
         </state>
       </provider>
     </entry>
