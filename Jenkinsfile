@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        docker { image 'silvio_core' }
+        docker { image 'docker4jruby' }
     }
     stages {
         stage('Build') {
